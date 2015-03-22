@@ -1,0 +1,2 @@
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'rking/ag.vim'
