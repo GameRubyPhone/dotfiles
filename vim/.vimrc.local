@@ -1,0 +1,6 @@
+" this fiel will dynamically changed when saved"
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'rking/ag.vim'
+
+let mapleader = " "
+map <Leader>a :Ag!<Space>
