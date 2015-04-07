@@ -1,7 +1,55 @@
-" this fiel will dynamically changed when saved"
+" this file will dynamically changed when saved"
 
 let mapleader = " "
+
+" Silver Search"
 map <Leader>a :Ag!<Space>
 
-color fruity
+" Easy quit"
+nnoremap <C-W> :w<CR>:bd<CR>
+" Easy new tab"
+nnoremap <C-T> :tabnew<CR>
+" Switch to the last open file"
+nnoremap <Leader><Leader> <c-^>
+
+" show the history, jump and changes"
+nnoremap <Leader>h :history<CR>
+nnoremap <Leader>j :jumps<CR>
+nnoremap <Leader>c :changes<CR>
+
+" inoremap for navigation hjkl"
+inoremap <c-h> <c-o>h
+inoremap <c-j> <c-o>j
+inoremap <c-k> <c-o>k
+inoremap <c-l> <c-o>l
+
+" open a file"
+nnoremap <Leader>o :tabedit 
+
+nnoremap <c-f> :set foldmethod=syntax<CR>
+
+" Rename current file, via Gary Bernhardt
+function! RenameFile()
+  let old_name = expand('%')
+  let new_name = input('New file name: ', expand('%'))
+  if new_name != '' && new_name != old_name
+    exec ':saveas ' . new_name
+    exec ':silent !rm ' . old_name
+    redraw!
+  endif
+endfunction
+map <leader>rn :call RenameFile()<cr>
+
+" ctrlp config
+let g:ctrlp_map = '<c-p>'
+
+color ir_black
 set relativenumber
+
+autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
+
+autocmd FileType ruby nnoremap <buffer> <F9> :exec '!ruby' shellescape(@%, 1)<cr>
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
