@@ -25,6 +25,7 @@ inoremap <c-l> <c-o>l
 
 " open a file"
 nnoremap <Leader>o :tabedit 
+nnoremap <Leader>t :Rake<CR>
 
 nnoremap <c-f> :set foldmethod=syntax<CR>
 
@@ -43,7 +44,10 @@ map <leader>rn :call RenameFile()<cr>
 " ctrlp config
 let g:ctrlp_map = '<c-p>'
 
-color ir_black
+" "color ir_black
+" "color peaksea
+" "color fruity
+color molokai
 set relativenumber
 
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
