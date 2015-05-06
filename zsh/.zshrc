@@ -50,7 +50,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/home/tao/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_0/bin:/home/tao/.rvm/gems/ruby-2.1.2@global/bin:/home/tao/.rvm/rubies/ruby-2.1.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/tao/.rvm/bin:/home/tao/.rvm/bin:/home/tao/bin"
+# export PATH="/home/tao/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_0/bin:/home/tao/.rvm/gems/ruby-2.1.2@global/bin:/home/tao/.rvm/rubies/ruby-2.1.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/tao/.rvm/bin:/home/tao/.rvm/bin:/home/tao/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # import $HOME/bin into $PATH by T.Z
@@ -87,3 +87,10 @@ setopt noflowcontrol
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # install the fazf tool on github: https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Vi mode
+
+# bindkey -v
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+source $HOME/.rvm/scripts/rvm

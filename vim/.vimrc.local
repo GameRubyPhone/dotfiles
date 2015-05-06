@@ -6,7 +6,7 @@ let mapleader = " "
 map <Leader>a :Ag!<Space>
 
 " Easy quit"
-nnoremap <C-W> :w<CR>:bd<CR>
+nnoremap <C-w> :w<CR>:bd<CR>
 " Easy new tab"
 nnoremap <C-T> :tabnew<CR>
 " Switch to the last open file"
@@ -22,12 +22,15 @@ inoremap <c-h> <c-o>h
 inoremap <c-j> <c-o>j
 inoremap <c-k> <c-o>k
 inoremap <c-l> <c-o>l
+inoremap <c-o> <c-o>o
+inoremap <c-s> <esc>:w<cr>i
 
 " open a file"
 nnoremap <Leader>o :tabedit 
 nnoremap <Leader>t :Rake<CR>
 
 nnoremap <c-f> :set foldmethod=syntax<CR>
+nnoremap <c-s> :w<CR>
 
 " Rename current file, via Gary Bernhardt
 function! RenameFile()
@@ -55,5 +58,8 @@ autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
 autocmd FileType ruby nnoremap <buffer> <F9> :exec '!ruby' shellescape(@%, 1)<cr>
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+
+autocmd FileType c colorscheme fruity
+autocmd filetype c nnoremap <buffer> <F9> :exec '!gcc '.shellescape('%').' -o '.shellescape('%:r')<cr>
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
