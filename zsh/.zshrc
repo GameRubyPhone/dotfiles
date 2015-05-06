@@ -93,4 +93,6 @@ setopt noflowcontrol
 # bindkey -v
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-source $HOME/.rvm/scripts/rvm
+# source $HOME/.rvm/scripts/rvm
+export GEM_HOME="$HOME/.rvm/gems" # add gem home
+export GEM_PATH="$HOME/.rvm/gems/ruby-2.2.2:$HOME/.rvm/gems/ruby-2.2.2@global"
