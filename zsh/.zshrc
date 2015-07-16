@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/tao/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -95,4 +95,4 @@ setopt noflowcontrol
 export PATH="$HOME/rvm/gems/bin:$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
 # source $HOME/.rvm/scripts/rvm
 export GEM_HOME="$HOME/rvm/gems" # add gem home
-export GEM_PATH="$HOME/rvm/gems/ruby-2.2.2:$HOME/.rvm/gems/ruby-2.2.2@global"
+# export GEM_PATH="$HOME/rvm/gems/ruby-2.2.2:$HOME/.rvm/gems/ruby-2.2.2@global"
