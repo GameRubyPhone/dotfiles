@@ -1,0 +1,8 @@
+#!/bin/bash
+passenger stop --pid-file tmp/pids/passenger.$1.pid
+if [ $? -e 0 ]
+then
+  echo "Finished!!"
+else
+  echo "Something wrong"
+fi
