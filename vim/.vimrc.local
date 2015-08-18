@@ -25,10 +25,10 @@ nnoremap j gj
 nnoremap gj j
 
 " inoremap for navigation hjkl"
-inoremap <c-h> <c-o>h
-inoremap <c-j> <c-o>j
-inoremap <c-k> <c-o>k
-inoremap <c-l> <c-o>l
+" inoremap <c-h> <c-o>h
+" inoremap <c-j> <c-o>j
+" noremap <c-k> <c-o>k
+" noremap <c-l> <c-o>l
 inoremap <c-s> <esc>:w<cr>i
 
 " fugitive Git plugin"
