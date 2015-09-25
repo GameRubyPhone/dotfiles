@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/tao/.oh-my-zsh
+export ZSH=/Users/zhangtao/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -50,7 +50,6 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/home/tao/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_0/bin:/home/tao/.rvm/gems/ruby-2.1.2@global/bin:/home/tao/.rvm/rubies/ruby-2.1.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/tao/.rvm/bin:/home/tao/.rvm/bin:/home/tao/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # import $HOME/bin into $PATH by T.Z
@@ -76,6 +75,7 @@ source $ZSH/oh-my-zsh.sh
 stty ixany
 stty ixoff -ixon
 setopt noflowcontrol
+setopt BRACE_CCL
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -86,4 +86,6 @@ setopt noflowcontrol
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # install the fazf tool on github: https://github.com/junegunn/fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh  ] && source ~/.fzf.zsh
+alias emacs="/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs"
+

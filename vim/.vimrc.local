@@ -44,10 +44,12 @@ map <leader>rn :call RenameFile()<cr>
 " ctrlp config
 let g:ctrlp_map = '<c-p>'
 
-" "color ir_black
-" "color peaksea
-" "color fruity
-color molokai
+"color ir_black
+"color peaksea
+"color fruity
+"color molokai
+color solarized 
+set nospell
 set relativenumber
 
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ios-sim launch ./platforms/ios/build/emulator/$1.app

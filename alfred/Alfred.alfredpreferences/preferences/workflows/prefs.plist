@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>defaultBundleId</key>
+	<string>windse7en_</string>
+	<key>defaultCreatedBy</key>
+	<string>Tao Zhang</string>
+	<key>defaultReadme</key>
+	<string>Rubyist
+
+love vim</string>
+	<key>defaultWebsite</key>
+	<string>windse7en.github.io</string>
+</dict>
+</plist>
