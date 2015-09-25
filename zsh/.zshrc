@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/zhangtao/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -50,6 +50,7 @@ plugins=(git)
 
 # User configuration
 
+# export PATH="/home/tao/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_0/bin:/home/tao/.rvm/gems/ruby-2.1.2@global/bin:/home/tao/.rvm/rubies/ruby-2.1.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/tao/.rvm/bin:/home/tao/.rvm/bin:/home/tao/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # import $HOME/bin into $PATH by T.Z
@@ -86,6 +87,15 @@ setopt BRACE_CCL
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # install the fazf tool on github: https://github.com/junegunn/fzf
-[ -f ~/.fzf.zsh  ] && source ~/.fzf.zsh
-alias emacs="/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs"
+#alias emacs="/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs"
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Vi mode
+
+# bindkey -v
+
+export PATH="$HOME/rvm/gems/bin:$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
+# source $HOME/.rvm/scripts/rvm
+export GEM_HOME="$HOME/rvm/gems" # add gem home
+# export GEM_PATH="$HOME/rvm/gems/ruby-2.2.2:$HOME/.rvm/gems/ruby-2.2.2@global"

@@ -6,7 +6,7 @@ let mapleader = " "
 map <Leader>a :Ag!<Space>
 
 " Easy quit"
-nnoremap <C-W> :w<CR>:bd<CR>
+nnoremap <C-q> :w<CR>:bd<CR>
 " Easy new tab"
 nnoremap <C-T> :tabnew<CR>
 " Switch to the last open file"
@@ -14,20 +14,50 @@ nnoremap <Leader><Leader> <c-^>
 
 " show the history, jump and changes"
 nnoremap <Leader>h :history<CR>
-nnoremap <Leader>j :jumps<CR>
+nnoremap <Leader><Leader>j :jumps<CR>
 nnoremap <Leader>c :changes<CR>
+nnoremap <Leader>m :marks<CR>
+
+" Remap the line motion commands"
+nnoremap k gk
+nnoremap gk k
+nnoremap j gj
+nnoremap gj j
 
 " inoremap for navigation hjkl"
-inoremap <c-h> <c-o>h
-inoremap <c-j> <c-o>j
-inoremap <c-k> <c-o>k
-inoremap <c-l> <c-o>l
+" inoremap <c-h> <c-o>h
+" inoremap <c-j> <c-o>j
+" noremap <c-k> <c-o>k
+" noremap <c-l> <c-o>l
+inoremap <c-s> <esc>:w<cr>i
+
+" fugitive Git plugin"
+nmap <leader>gs :Gstatus<CR>
+nmap <leader>gd :Gdiff<CR>
+nmap <leader>gc :Gcommit<CR>
+nmap <leader>gb :Gblame<CR>
+nmap <leader>gl :Glog<CR>
+nmap <leader>gp :Git push<CR>
 
 " open a file"
 nnoremap <Leader>o :tabedit 
-nnoremap <Leader>t :Rake<CR>
+"nnoremap <Leader>t :Rake<CR>
 
-nnoremap <c-f> :set foldmethod=syntax<CR>
+nnoremap <Leader>f :set foldmethod=syntax<CR>
+nnoremap <c-s> :w<CR>
+
+" Tagbar mapping"
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+
+" Easymotion"
+nmap <Leader>s <Plug>(easymotion-s)
+map / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+let g:EasyMotion_smartcase = 1
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
 
 " Rename current file, via Gary Bernhardt
 function! RenameFile()
@@ -44,13 +74,15 @@ map <leader>rn :call RenameFile()<cr>
 " ctrlp config
 let g:ctrlp_map = '<c-p>'
 
-"color ir_black
-"color peaksea
-"color fruity
-"color molokai
-color solarized 
+" color ir_black
+" color peaksea
+" color fruity
+" color molokai
+color jellybeans
+
 set nospell
 set relativenumber
+set shiftwidth=2
 
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
@@ -58,4 +90,8 @@ autocmd FileType python setlocal shiftwidth=4 tabstop=4
 autocmd FileType ruby nnoremap <buffer> <F9> :exec '!ruby' shellescape(@%, 1)<cr>
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
+autocmd FileType c colorscheme fruity
+autocmd filetype c nnoremap <buffer> <F9> :exec '!gcc '.shellescape('%').' -o '.shellescape('%:r')<cr>
+
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
