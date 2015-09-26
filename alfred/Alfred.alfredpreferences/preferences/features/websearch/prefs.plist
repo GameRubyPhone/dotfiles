@@ -19,6 +19,21 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>C854C0ED-7B00-452D-8B67-7D95C70E7253</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wkc</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>search Kansas City Weather</string>
+			<key>url</key>
+			<string>http://www.weather.com/weather/today/l/USMO0460:1:US</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

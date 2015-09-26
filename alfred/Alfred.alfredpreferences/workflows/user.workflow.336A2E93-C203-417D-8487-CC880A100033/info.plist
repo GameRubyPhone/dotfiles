@@ -146,6 +146,7 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.runningwithcrayons.Alfred-2</string>
+					<string>com.google.Chrome</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -194,6 +195,7 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.runningwithcrayons.Alfred-2</string>
+					<string>com.google.Chrome</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -225,6 +227,7 @@
 				<key>relatedApps</key>
 				<array>
 					<string>com.runningwithcrayons.Alfred-2</string>
+					<string>com.google.Chrome</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
