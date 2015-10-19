@@ -67,7 +67,7 @@
 			<key>config</key>
 			<dict>
 				<key>command</key>
-				<integer>6</integer>
+				<integer>1</integer>
 				<key>confirm</key>
 				<false/>
 			</dict>
