@@ -18,6 +18,10 @@ nnoremap <Leader><Leader>j :jumps<CR>
 nnoremap <Leader>c :changes<CR>
 nnoremap <Leader>m :marks<CR>
 
+" convert ' to "
+nnoremap <Leader>' :%s/'/"/gc<CR>
+nnoremap <Leader>" :%s/"/'/gc<CR>
+
 " Remap the line motion commands"
 nnoremap k gk
 nnoremap gk k

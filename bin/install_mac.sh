@@ -31,4 +31,6 @@ sudo ln -s ~/dotfiles/vim/.vimrc.local ~/.vimrc.local
 sudo ln -s ~/dotfiles/vim/.vimrc.bundles.local ~/.vimrc.bundles.localk
 sudo ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
+ln -s /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc /usr/local/bin
+
 sh ~/dotfiles/bin/make.sh
