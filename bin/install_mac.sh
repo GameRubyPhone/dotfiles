@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'Please install git, vim 7.4+ first, change to home directory'
+echo 'Please install git, vim 7.4+ first with lua, change to home directory'
 eval 'cd ~/'
 
 git config --global user.name='Tao Zhang'
@@ -12,6 +12,7 @@ function install_program_on_mac()
       case $yn in
           [Yy]* ) eval $2; break;;
           [Nn]* ) break;;
+          [Qq]* ) exit;;
           * ) echo "Please answer yes(y) or no(n).";;
       esac
   done
@@ -24,12 +25,14 @@ install_program_on_mac 'fzf search' 'git clone --depth 1 https://github.com/june
 install_program_on_mac 'spf13.vim' 'curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh'
 install_program_on_mac 'tmux' 'brew install tmux'
 install_program_on_mac 'rvm' 'gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3; \curl -sSL https://get.rvm.io | bash -s stable --ruby'
+install_program_on_mac 'ctags' 'brew install ctags'
 
 sudo rm ~/.zshrc ~/.tmux.conf ~/.vimrc.local
 sudo ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
 sudo ln -s ~/dotfiles/vim/.vimrc.local ~/.vimrc.local
 sudo ln -s ~/dotfiles/vim/.vimrc.bundles.local ~/.vimrc.bundles.localk
 sudo ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+sudo mv /usr/bin/ctags /usr/bin/ctags_mac
 
 ln -s /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc /usr/local/bin
 

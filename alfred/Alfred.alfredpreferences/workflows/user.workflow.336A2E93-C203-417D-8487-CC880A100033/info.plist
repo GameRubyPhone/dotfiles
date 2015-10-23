@@ -8,7 +8,7 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>11F46031-3978-4ECC-AF23-FF10CADACA01</key>
+		<key>013AB60B-F43D-49C9-A532-CD1C149C9704</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -19,11 +19,22 @@
 				<string></string>
 			</dict>
 		</array>
-		<key>14CFC576-C51A-4625-BD6F-EF830988E774</key>
+		<key>11F46031-3978-4ECC-AF23-FF10CADACA01</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>0FD1E2E5-86FE-4D2C-81EE-0A57D733026B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>14CFC576-C51A-4625-BD6F-EF830988E774</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE073D19-5005-4ACF-94A3-FB00C9ED364B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -145,8 +156,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.runningwithcrayons.Alfred-2</string>
 					<string>com.google.Chrome</string>
+					<string>com.runningwithcrayons.Alfred-2</string>
+					<string>org.mozilla.firefox</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -157,6 +169,56 @@
 			<string>BB3F0E0B-CBEF-40CE-8F8D-57A7931F212A</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>19</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>2</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.google.Chrome</string>
+					<string>com.runningwithcrayons.Alfred-2</string>
+					<string>org.mozilla.firefox</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>14CFC576-C51A-4625-BD6F-EF830988E774</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Firefox.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>AE073D19-5005-4ACF-94A3-FB00C9ED364B</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -183,38 +245,6 @@
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>19</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>2</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.runningwithcrayons.Alfred-2</string>
-					<string>com.google.Chrome</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>2</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>14CFC576-C51A-4625-BD6F-EF830988E774</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
 				<integer>20</integer>
 				<key>hotmod</key>
 				<integer>1048576</integer>
@@ -226,8 +256,9 @@
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.runningwithcrayons.Alfred-2</string>
 					<string>com.google.Chrome</string>
+					<string>com.runningwithcrayons.Alfred-2</string>
+					<string>org.mozilla.firefox</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>2</integer>
@@ -244,7 +275,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Utilities/Terminal.app</string>
+					<string>/Applications/iTerm.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
@@ -256,15 +287,53 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>21</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>4</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.google.Chrome</string>
+					<string>com.runningwithcrayons.Alfred-2</string>
+					<string>org.mozilla.firefox</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>013AB60B-F43D-49C9-A532-CD1C149C9704</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>013AB60B-F43D-49C9-A532-CD1C149C9704</key>
+		<dict>
+			<key>ypos</key>
+			<real>540</real>
+		</dict>
 		<key>0FD1E2E5-86FE-4D2C-81EE-0A57D733026B</key>
 		<dict>
 			<key>ypos</key>
-			<real>300</real>
+			<real>420</real>
 		</dict>
 		<key>11F46031-3978-4ECC-AF23-FF10CADACA01</key>
 		<dict>
@@ -289,12 +358,17 @@
 		<key>51B99150-EB50-458D-AD48-90C386F81411</key>
 		<dict>
 			<key>ypos</key>
-			<real>420</real>
+			<real>540</real>
 		</dict>
 		<key>A07F92CE-AC0A-48FA-8787-E02E3054ABA1</key>
 		<dict>
 			<key>ypos</key>
 			<real>180</real>
+		</dict>
+		<key>AE073D19-5005-4ACF-94A3-FB00C9ED364B</key>
+		<dict>
+			<key>ypos</key>
+			<real>300</real>
 		</dict>
 		<key>BB3F0E0B-CBEF-40CE-8F8D-57A7931F212A</key>
 		<dict>
