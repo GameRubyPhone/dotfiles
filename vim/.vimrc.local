@@ -4,6 +4,7 @@ let mapleader = " "
 
 " Silver Search"
 map <Leader>a :Ag!<Space>
+let g:ag_working_path_mode="r"
 
 " Easy quit"
 nnoremap <C-q> :w<CR>:bd<CR>
