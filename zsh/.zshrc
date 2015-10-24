@@ -88,12 +88,15 @@ setopt BRACE_CCL
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # install the fazf tool on github: https://github.com/junegunn/fzf
 #alias emacs="/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+#
 # Vi mode
 
-# bindkey -v
+bindkey -v
+bindkey '^P' up-history
+bindkey '^N' down-history
+export KEYTIMEOUT=1
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="$HOME/rvm/gems/bin:$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
 # source $HOME/.rvm/scripts/rvm
