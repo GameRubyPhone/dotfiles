@@ -1,0 +1,40 @@
+unused:
+  name: 'unused'
+  list:
+    - 'Update jira status from IN PROGRESS to REVIEW?'
+jira:
+  name: "Check JIRA:"
+  list: 
+    - 'Update jira status from IN PROGRESS to REVIEW?'
+    - 'Write comment to explain the solution/defect/discussion?'
+
+mistakes:
+  name: "Check Mistakes:"
+  list:
+    - 'all single quote in js, ruby, yml, gemfile?'
+    - '2 space indent and white spaces?'
+
+js:
+  name: "Check JS:"
+  list:
+    - 'Function documentation follow Tomdoc/project convention/Open source convention?'
+    - 'Documentation needs to include summary, arguments, example, external links, return and exceptions?'
+    - 'Convert double quotes to single quote?'
+    - 'Jasmine test description, readable?'
+    - 'Variable declarations and indents?'
+    - 'Function, variable in lower camelCase, except Constructor Function in upper CamelCase?'
+    - 'Event handlers and callback functions should be prefixed with "on"?'
+    - 'Boolean variable or function name started with "is"/"can"/"has"/"should"?'
+    - 'Private method started with _?'
+
+code_review:
+  name: "Check CR:"
+  list:
+    - 'Include Jenkins, Jira, Github?'
+    - 'title readable? description, OK?'
+    - 'All files in code review, display right?'
+
+github:
+  name: "Check Github:"
+  list:
+    - 'Go through all changed file and explain changing reason?'
