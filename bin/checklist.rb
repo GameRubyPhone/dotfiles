@@ -2,6 +2,7 @@
 # Checklist before code review
 require 'io/console'
 require 'pry'
+require 'colorize'
 require 'yaml'
 
 class CheckList
@@ -70,8 +71,16 @@ class CheckList
     puts words
   end
 
+  def colorize_string(string)
+    string.gsub(/\#{[^}]*}/) do |match|
+      a = match.delete('#{}').split('.')
+      a[0].send(a[1])
+    end
+  end
+
   # Public: format checklist string and output based on result
   def list_item_for_code_review(line_num, list_item)
+    list_item = colorize_string(list_item)
     print "\t#{line_num}. #{list_item}\t"
     #binding.pry
     case @user_inputs[@user_inputs_index]
