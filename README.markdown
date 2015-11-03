@@ -17,3 +17,6 @@ install ruby by rvm
 
 Q: yank and paste not works in VIM/TMUX
 A: http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
+
+install rubocop for check ruby styleguide
+install jshint2.vim for check javascript styleguide

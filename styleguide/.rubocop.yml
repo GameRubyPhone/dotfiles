@@ -1,0 +1,98 @@
+# These rules below override the default rules provided by rubocop.
+
+# Maximum line length of 120 chars
+LineLength:
+  Max: 120
+
+# Avoid methods longer than 30 lines of code
+MethodLength:
+  Max: 30
+
+# Avoid using {...} for multi-line blocks (multiline chaining is always ugly).
+# Prefer {...} over do...end for single-line blocks.
+Blocks:
+  Enabled: false
+
+# Favor unless over if for negative conditions (or control flow or).
+NegatedIf:
+  Enabled: false
+
+# Use %w or %W for arrays of words.
+WordArray:
+  Enabled: false
+
+# Document classes and non-namespace modules.
+Documentation:
+  Enabled: false
+
+# Use spaces inside hash literal braces - or don't.
+SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+# Don't use assignment in conditions.
+AssignmentInCondition:
+  Enabled: false
+
+# Avoid parameter lists longer than three or four parameters.
+ParameterLists:
+  Enabled: false
+
+# Always use 'raise' command, never 'fail'
+SignalException:
+  EnforcedStyle: only_raise
+
+# Restrict the number of lines in a class (not counting comments) to a maximum
+ClassLength:
+  Max: 150
+
+# Information on checks can be found at visit http://www.rubydoc.info/gems/rubocop/0.27.1
+CyclomaticComplexity:
+  Max: 10
+
+ClassAndModuleChildren:
+  Enabled: false
+
+SpaceBeforeFirstArg:
+  Enabled: false
+
+SingleSpaceBeforeFirstArg:
+  Enabled: false
+
+Delegate:
+  Enabled: false
+
+InlineComment:
+  Enabled: false
+
+ClassCheck:
+  Enabled: false
+
+BarePercentLiterals:
+  Enabled: false
+
+PerceivedComplexity:
+  Enabled: false
+
+AbcSize:
+  Enabled: false
+
+EmptyLinesAroundMethodBody:
+  Enabled: false
+
+EmptyLinesAroundClassBody:
+  Enabled: false
+
+EmptyLinesAroundModuleBody:
+  Enabled: false
+
+SpaceInsideBlockBraces:
+  Enabled: false
+
+Next:
+  Enabled: false
+
+SymbolProc:
+  Enabled: false
+
+DoubleNegation:
+  Enabled: false

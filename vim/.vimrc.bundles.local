@@ -1,3 +1,4 @@
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'rking/ag.vim'
 Bundle 'slim-template/vim-slim'
+Bundle 'shutnik/jshint2.vim'

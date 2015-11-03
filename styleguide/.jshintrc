@@ -1,0 +1,52 @@
+{
+// Enforcing Options
+
+  "bitwise"          : true,
+  "camelcase"        : true,
+  "curly"            : true,
+  "eqeqeq"           : true,
+  "forin"            : true,
+  "immed"            : true,
+  "indent"           : 2,
+  "latedef"          : true,
+  "newcap"           : true,
+  "noarg"            : true,
+  "noempty"          : true,
+  "plusplus"         : false,
+  "quotmark"         : "single",
+  "undef"            : true,
+  "unused"           : true,
+  "strict"           : false,
+  "trailing"         : true,
+  "maxlen"           : 120,
+  "maxparams"        : 5,
+  "maxdepth"         : 5,
+  "maxstatements"    : 50,
+
+// Relaxing Options
+
+// Environments
+
+  "browser"          : true,
+  "jquery"           : true,
+
+  "debug"            : true,
+  "evil"             : false,
+  "node"             : true,
+  "predef"           : [
+    "afterEach",
+    "beforeEach",
+    "confirm",
+    "context",
+    "describe",
+    "expect",
+    "it",
+    "I18n",
+    "loadFixtures",
+    "runs",
+    "spyOn",
+    "spyOnEvent",
+    "waitsFor",
+    "xdescribe"]
+
+}

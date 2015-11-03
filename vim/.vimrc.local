@@ -100,3 +100,8 @@ autocmd filetype c nnoremap <buffer> <F9> :exec '!gcc '.shellescape('%').' -o '.
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
+" JSHint to test JavaScript styleguide
+nnoremap <silent><F2> :JSHint<CR>
+nnoremap <silent><F2>n :lnext<CR>
+nnoremap <silent><F2>p :lprevious<CR>
+nnoremap <silent><F3> :exec '!rubocop ' expand('%:p')<CR>
