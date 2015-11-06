@@ -10,7 +10,7 @@ MethodLength:
 
 # Avoid using {...} for multi-line blocks (multiline chaining is always ugly).
 # Prefer {...} over do...end for single-line blocks.
-Blocks:
+BlockDelimiters:
   Enabled: false
 
 # Favor unless over if for negative conditions (or control flow or).

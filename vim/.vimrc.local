@@ -1,12 +1,12 @@
-" this file will dynamically changed when saved"
+" this file will dynamically changed when saved
 
 let mapleader = " "
 
-" Silver Search"
+" Silver Search
 map <Leader>a :Ag!<Space>
 let g:ag_working_path_mode="r"
 
-" Easy quit"
+" Easy quit
 nnoremap <C-q> :w<CR>:bd<CR>
 " Easy new tab"
 nnoremap <C-T> :tabnew<CR>
@@ -104,7 +104,7 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 nnoremap <silent><F2> :JSHint<CR>
 nnoremap <silent><F2>n :lnext<CR>
 nnoremap <silent><F2>p :lprevious<CR>
-nnoremap <silent><F3> :exec '!rubocop ' expand('%:p')<CR>
+nnoremap <silent><F3> :exec '!rubocop -R ' expand('%:p')<CR>
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
@@ -113,3 +113,28 @@ map <Leader>l :call RunLastSpec()<CR>
 "map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_command = "!export PWD_LAST=$PWD; cd `git rev-parse --show-toplevel`; rspec $PWD_LAST/{spec}"
+
+map <Leader>r :so ~/.vimrc.local<CR>
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_haml_checkers = ['haml_lint']
+
+set spell spelllang=en_us
+set spellfile=$HOME/dotfiles/vim/spell/en.utf-8.add
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Plugin key-mappings neocomplete.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)

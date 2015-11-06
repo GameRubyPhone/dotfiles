@@ -4,6 +4,7 @@ eval 'cd ~/'
 
 git config --global user.name='Tao Zhang'
 git config --global alias.co checkout
+git config --global alias.br branch
 
 function install_program_on_mac() 
 {

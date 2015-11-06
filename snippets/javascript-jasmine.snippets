@@ -1,0 +1,50 @@
+snippet it
+    it('${1:description}', function() {
+        ${0}
+    }
+snippet des
+    describe('${1:description}', function() {
+	    ${0}
+    });
+snippet bef
+    beforeEach(function() {
+        ${0}
+    });
+snippet aft
+    afterEach(function() {
+        ${0}
+    });
+snippet ru
+    runs(function() {
+        ${0}
+    });
+snippet ex
+    expect(${1:target})${0};
+snippet ee
+    expect(${1:target}).toEqual(${2:value});
+snippet el
+    expect(${1:target}).toBeLessThan(${2:value});
+snippet eg
+    expect(${1:target}).toBeGreaterThan(${2:value});
+snippet eb
+    expect(${1:target}).toBe(${2:value});
+snippet em
+    expect(${1:target}).toMatch(${2:pattern});
+snippet eb
+    expect(${1:target}).toBe(${2:value});
+snippet ed
+    expect(${1:target}).toBeDefined();
+snippet en
+    expect(${1:target}).toBeNull();
+snippet ec
+    expect(${1:target}).toContain(${2:value});
+snippet ehbc
+    expect(${1:target}).toHaveBeenCalled();
+snippet ethbcw
+    expect(${1:target}).toHaveBeenCalledWith(${2:arguments});
+snippet et
+	expect(${1:target}).toBeTruthy();
+snippet ef
+	expect(${1:target}).toBeFalsy();
+snippet eha
+    expect(${1:target}).toHaveAttr('${2:attr}'${3:, '${4:value}'});
