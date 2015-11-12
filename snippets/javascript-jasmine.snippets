@@ -1,22 +1,22 @@
 snippet it
     it('${1:description}', function() {
-        ${0}
-    }
+      ${0}
+    });
 snippet des
     describe('${1:description}', function() {
-	    ${0}
+	  ${0}
     });
 snippet bef
     beforeEach(function() {
-        ${0}
+      ${0}
     });
 snippet aft
     afterEach(function() {
-        ${0}
+      ${0}
     });
 snippet ru
     runs(function() {
-        ${0}
+      ${0}
     });
 snippet ex
     expect(${1:target})${0};
@@ -26,8 +26,6 @@ snippet el
     expect(${1:target}).toBeLessThan(${2:value});
 snippet eg
     expect(${1:target}).toBeGreaterThan(${2:value});
-snippet eb
-    expect(${1:target}).toBe(${2:value});
 snippet em
     expect(${1:target}).toMatch(${2:pattern});
 snippet eb

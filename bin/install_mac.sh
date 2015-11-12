@@ -20,6 +20,7 @@ function install_program_on_mac()
 }
 
 install_program_on_mac 'zsh' 'brew install zsh zsh-completions'
+echo "Please create theme in zsh custom folder and ln -s to tao_z_theme"
 install_program_on_mac 'dotfiles' 'git clone https://github.com/windse7en/dotfiles.git'
 install_program_on_mac 'oh.my.zsh' 'sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
 install_program_on_mac 'fzf search' 'git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf; ~/.fzf/install'

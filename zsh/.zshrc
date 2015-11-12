@@ -2,15 +2,42 @@
 export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
+# Optionally, if you set this to 'random', it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+ZSH_THEME='tao_z_theme'
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+CASE_SENSITIVE='true'
+
+# zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # add the alias of the rake command:
-alias rake="noglob rake"
+alias rake='noglob rake'
+
+# add git alias
+alias v='vi'
+alias s='rspec'
+alias soz='source ~/.zshrc'
+alias f='fg'
+alias rmt='trash-put'
+alias rm='echo "This is not the command you are looking for."; false'
+
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+_-accept-line () {
+    emulate -L zsh
+    local -a WORDS
+    WORDS=( ${(z)BUFFER} )
+    # Unfortunately ${${(z)BUFFER}[1]} works only for at least two words,
+    # thus I had to use additional variable WORDS here.
+    local -r FIRSTWORD=${WORDS[1]}
+    local -r GREEN=$'\e[32m' RESET_COLORS=$'\e[0m'
+    [[ "$(whence -w $FIRSTWORD 2>/dev/null)" == "${FIRSTWORD}: alias" ]] &&
+        echo -nE $'\n'"${GREEN}Executing $(whence $FIRSTWORD)${RESET_COLORS}"
+    zle .accept-line
+}
+zle -N accept-line _-accept-line
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
@@ -46,7 +73,7 @@ alias rake="noglob rake"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git rails)
 
 # User configuration
 
@@ -98,7 +125,8 @@ export KEYTIMEOUT=1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH="$HOME/rvm/gems/bin:$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
+#export PATH="$HOME/rvm/gems/bin:$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
 # source $HOME/.rvm/scripts/rvm
-export GEM_HOME="$HOME/rvm/gems" # add gem home
+#export GEM_HOME="$HOME/rvm/gems" # add gem home
 # export GEM_PATH="$HOME/rvm/gems/ruby-2.2.2:$HOME/.rvm/gems/ruby-2.2.2@global"
+

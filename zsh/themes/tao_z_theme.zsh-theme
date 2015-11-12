@@ -47,6 +47,14 @@ ys_hg_prompt_info() {
 	fi
 }
 
+#RVM propomt
+function prompt_rvm {
+    rbv=`rvm-prompt`
+    rbv=${rbv#ruby-}
+    [[ $rbv == *"@"* ]] || rbv="${rbv}@default"
+    echo $rbv
+}
+
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $ 
 # %{$fg[white]%}at \
 # %{$fg[green]%}$(box_name) \
@@ -57,6 +65,7 @@ PROMPT="
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
 ${git_info} \
+%{$fg[yellow]%}$(prompt_rvm) \
 %{$fg[white]%}%*
 %{$terminfo[bold]$fg[green]%}$ %{$reset_color%}"
 
