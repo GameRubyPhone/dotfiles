@@ -33,19 +33,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>searcher</key>
-				<integer>1635219305</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.systemwebsearch</string>
-			<key>uid</key>
-			<string>F1A607D7-2D8F-4DD5-9C22-F1415EDB28AD</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -61,6 +48,19 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>F8C5D133-7C4D-44F2-845B-FAE1568A09E7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>searcher</key>
+				<integer>1635219305</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>F1A607D7-2D8F-4DD5-9C22-F1415EDB28AD</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>

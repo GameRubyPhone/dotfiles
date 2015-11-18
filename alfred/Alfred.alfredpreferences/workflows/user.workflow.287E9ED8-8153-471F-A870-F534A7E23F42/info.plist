@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>windse7en_fireforx_shortcut</string>
+	<string>windse7en_cerner</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict/>
 	<key>createdby</key>
 	<string>Tao Zhang</string>
 	<key>description</key>
-	<string>remap firefox shortcut</string>
+	<string>Cerner Workflow</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Firefox remap shortcut</string>
+	<string>Cerner</string>
 	<key>objects</key>
 	<array/>
 	<key>readme</key>

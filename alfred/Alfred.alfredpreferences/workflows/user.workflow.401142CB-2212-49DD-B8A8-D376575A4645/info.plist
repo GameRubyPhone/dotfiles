@@ -31,12 +31,33 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>searcher</key>
+				<integer>1635215215</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>B8FFA3AB-AD7D-4316-A84F-5958A671D4FF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>36</integer>
 				<key>keyword</key>
 				<string>g</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
@@ -73,19 +94,6 @@ echo $wf-&gt;toxml();</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>63F60794-BB56-4415-9372-BAF974C3A7E1</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>searcher</key>
-				<integer>1635215215</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.systemwebsearch</string>
-			<key>uid</key>
-			<string>B8FFA3AB-AD7D-4316-A84F-5958A671D4FF</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>

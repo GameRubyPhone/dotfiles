@@ -665,15 +665,15 @@ snippet mthrow
 ##########################
 #     Rspec snippets     #
 ##########################
-snippet desc
+snippet des
 	describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
 		${0}
 	end
-snippet descm
-	describe '${1:#method}' do
+snippet desm
+	describe '#${1:method}' do
 		${0:pending 'Not implemented'}
 	end
-snippet cont
+snippet con
 	context '${1:message}' do
 		${0}
 	end
@@ -697,8 +697,12 @@ snippet spec
 	specify { subject.${0} }
 snippet ar
     allow(${1:obj}).to receive(${2:message}) { ${3:value} }
+snippet ara
+    allow(${1:obj}).to receive(${2:message}).and_return(${3:value})
 snippet e
 	expect(${1:actual}).to ${0}
+snippet ebe
+	expect(${1:actual}).to be_empty
 snippet ere
 	expect { ${1:actual} }.to raise_error(${2:expected})
 snippet ebv

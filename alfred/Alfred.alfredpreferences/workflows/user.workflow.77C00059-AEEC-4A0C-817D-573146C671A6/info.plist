@@ -36,7 +36,15 @@
 				<key>escaping</key>
 				<integer>36</integer>
 				<key>keyword</key>
-				<string>amazon</string>
+				<string>a</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Searching Amazon.com ...</string>
 				<key>script</key>

@@ -147,21 +147,15 @@
 				<key>hotkey</key>
 				<integer>18</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
+				<integer>262144</integer>
 				<key>hotstring</key>
 				<string>1</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.google.Chrome</string>
-					<string>com.runningwithcrayons.Alfred-2</string>
-					<string>org.mozilla.firefox</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -180,21 +174,15 @@
 				<key>hotkey</key>
 				<integer>19</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
+				<integer>262144</integer>
 				<key>hotstring</key>
 				<string>2</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.google.Chrome</string>
-					<string>com.runningwithcrayons.Alfred-2</string>
-					<string>org.mozilla.firefox</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -245,23 +233,17 @@
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>20</integer>
+				<integer>21</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
+				<integer>262144</integer>
 				<key>hotstring</key>
-				<string>3</string>
+				<string>4</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.google.Chrome</string>
-					<string>com.runningwithcrayons.Alfred-2</string>
-					<string>org.mozilla.firefox</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -295,23 +277,17 @@
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>21</integer>
+				<integer>20</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
+				<integer>262144</integer>
 				<key>hotstring</key>
-				<string>4</string>
+				<string>3</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.google.Chrome</string>
-					<string>com.runningwithcrayons.Alfred-2</string>
-					<string>org.mozilla.firefox</string>
-				</array>
 				<key>relatedAppsMode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>

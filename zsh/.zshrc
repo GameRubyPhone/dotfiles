@@ -25,6 +25,11 @@ alias rm='echo "This is not the command you are looking for."; false'
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
+# add fish like autosuggestions, https://github.com/tarruda/zsh-autosuggestions
+# Load zsh-syntax-highlighting.
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# print alias to the frontend
 _-accept-line () {
     emulate -L zsh
     local -a WORDS
@@ -36,6 +41,8 @@ _-accept-line () {
     [[ "$(whence -w $FIRSTWORD 2>/dev/null)" == "${FIRSTWORD}: alias" ]] &&
         echo -nE $'\n'"${GREEN}Executing $(whence $FIRSTWORD)${RESET_COLORS}"
     zle .accept-line
+    # Enable autosuggestions automatically.
+    #zle autosuggest-start
 }
 zle -N accept-line _-accept-line
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -121,7 +128,7 @@ setopt BRACE_CCL
 bindkey -v
 bindkey '^P' up-history
 bindkey '^N' down-history
-export KEYTIMEOUT=1
+#export KEYTIMEOUT=1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
