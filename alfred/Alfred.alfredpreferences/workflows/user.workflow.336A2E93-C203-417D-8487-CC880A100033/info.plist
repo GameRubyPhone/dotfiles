@@ -52,6 +52,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>38134FC8-EA25-4263-84F0-A483F1619F62</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1E1B820B-5949-44F0-8274-964A3D0F1DE9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>BB3F0E0B-CBEF-40CE-8F8D-57A7931F212A</key>
 		<array>
 			<dict>
@@ -97,11 +108,11 @@
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>37</integer>
+				<integer>1</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>L</string>
+				<string>S</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -147,7 +158,7 @@
 				<key>hotkey</key>
 				<integer>18</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
 				<string>1</string>
 				<key>leftcursor</key>
@@ -161,33 +172,6 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>BB3F0E0B-CBEF-40CE-8F8D-57A7931F212A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
-				<integer>19</integer>
-				<key>hotmod</key>
-				<integer>262144</integer>
-				<key>hotstring</key>
-				<string>2</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>14CFC576-C51A-4625-BD6F-EF830988E774</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -211,33 +195,16 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Google Chrome.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>0FD1E2E5-86FE-4D2C-81EE-0A57D733026B</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>21</integer>
+				<integer>19</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>4</string>
+				<string>2</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -248,7 +215,34 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>11F46031-3978-4ECC-AF23-FF10CADACA01</string>
+			<string>14CFC576-C51A-4625-BD6F-EF830988E774</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>20</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>3</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>013AB60B-F43D-49C9-A532-CD1C149C9704</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -272,16 +266,33 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Slack.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>0FD1E2E5-86FE-4D2C-81EE-0A57D733026B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>20</integer>
+				<integer>21</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>3</string>
+				<string>4</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -292,7 +303,51 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>013AB60B-F43D-49C9-A532-CD1C149C9704</string>
+			<string>11F46031-3978-4ECC-AF23-FF10CADACA01</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Microsoft Office 2011/Microsoft Outlook.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>1E1B820B-5949-44F0-8274-964A3D0F1DE9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>23</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>5</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>38134FC8-EA25-4263-84F0-A483F1619F62</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -304,27 +359,37 @@
 		<key>013AB60B-F43D-49C9-A532-CD1C149C9704</key>
 		<dict>
 			<key>ypos</key>
-			<real>540</real>
+			<real>400</real>
 		</dict>
 		<key>0FD1E2E5-86FE-4D2C-81EE-0A57D733026B</key>
 		<dict>
 			<key>ypos</key>
-			<real>420</real>
+			<real>510</real>
 		</dict>
 		<key>11F46031-3978-4ECC-AF23-FF10CADACA01</key>
 		<dict>
 			<key>ypos</key>
-			<real>420</real>
+			<real>510</real>
 		</dict>
 		<key>14CFC576-C51A-4625-BD6F-EF830988E774</key>
 		<dict>
 			<key>ypos</key>
 			<real>300</real>
 		</dict>
+		<key>1E1B820B-5949-44F0-8274-964A3D0F1DE9</key>
+		<dict>
+			<key>ypos</key>
+			<real>660</real>
+		</dict>
 		<key>294A52DC-6FB9-4549-8665-D58FDE0223F3</key>
 		<dict>
 			<key>ypos</key>
 			<real>60</real>
+		</dict>
+		<key>38134FC8-EA25-4263-84F0-A483F1619F62</key>
+		<dict>
+			<key>ypos</key>
+			<real>660</real>
 		</dict>
 		<key>3F9C47AF-FF7F-4A0D-BBC3-6F42EC85F4AB</key>
 		<dict>
@@ -334,7 +399,7 @@
 		<key>51B99150-EB50-458D-AD48-90C386F81411</key>
 		<dict>
 			<key>ypos</key>
-			<real>540</real>
+			<real>400</real>
 		</dict>
 		<key>A07F92CE-AC0A-48FA-8787-E02E3054ABA1</key>
 		<dict>

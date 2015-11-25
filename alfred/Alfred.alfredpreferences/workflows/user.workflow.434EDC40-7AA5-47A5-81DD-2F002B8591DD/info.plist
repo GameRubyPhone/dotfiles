@@ -28,6 +28,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>86073DCC-4A82-4D94-869F-4327D7CBFEAE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C7550FB1-D15D-43CC-86B4-D852FC19C3AA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>980376D4-EAE4-4507-8A1D-23D03D7EEEA8</key>
 		<array>
 			<dict>
@@ -205,6 +216,42 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<true/>
+				<key>url</key>
+				<string>https://connect.ucern.com/groups/{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>C7550FB1-D15D-43CC-86B4-D852FC19C3AA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>uc</string>
+				<key>text</key>
+				<string>Search in Ucern Cern Group</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>86073DCC-4A82-4D94-869F-4327D7CBFEAE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Rubyist
@@ -237,10 +284,20 @@ love vim</string>
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
+		<key>86073DCC-4A82-4D94-869F-4327D7CBFEAE</key>
+		<dict>
+			<key>ypos</key>
+			<real>540</real>
+		</dict>
 		<key>980376D4-EAE4-4507-8A1D-23D03D7EEEA8</key>
 		<dict>
 			<key>ypos</key>
 			<real>180</real>
+		</dict>
+		<key>C7550FB1-D15D-43CC-86B4-D852FC19C3AA</key>
+		<dict>
+			<key>ypos</key>
+			<real>540</real>
 		</dict>
 		<key>D1BD3A56-5766-4D5D-B94D-37BF06E4512C</key>
 		<dict>

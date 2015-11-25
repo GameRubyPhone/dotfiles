@@ -138,3 +138,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" Set vim-slime target to tmux
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": ".1"}
+let g:slime_dont_ask_default = 1

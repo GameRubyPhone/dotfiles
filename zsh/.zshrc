@@ -16,7 +16,13 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 alias rake='noglob rake'
 
 # add git alias
+alias glf='git log --follow --stat --color'
+alias gcos='git checkout stable'
+# get recent commit from all branches
+# git for-each-ref --sort=-committerdate refs/heads/
+
 alias v='vi'
+alias c='clear'
 alias s='rspec'
 alias soz='source ~/.zshrc'
 alias f='fg'
