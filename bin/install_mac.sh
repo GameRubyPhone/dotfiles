@@ -36,6 +36,7 @@ sudo ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
 sudo ln -s ~/dotfiles/vim/.vimrc.local ~/.vimrc.local
 sudo ln -s ~/dotfiles/vim/.vimrc.bundle.local ~/.vimrc.bundle.local
 sudo ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+sudo ln -s ~/dotfiles/pry/.pryrc ~/.pryrc
 sudo mv /usr/bin/ctags /usr/bin/ctags_mac
 
 ln -s /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc /usr/local/bin

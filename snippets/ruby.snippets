@@ -701,8 +701,12 @@ snippet ara
     allow(${1:obj}).to receive(${2:message}).and_return(${3:value})
 snippet e
 	expect(${1:actual}).to ${0}
+snippet eb
+    expect(${1:actual}).to be(${2:expect})
 snippet ebe
 	expect(${1:actual}).to be_empty
+snippet ebk
+    expect(${1:actual}).to be_kind_of(${2:class})
 snippet ere
 	expect { ${1:actual} }.to raise_error(${2:expected})
 snippet ebv
@@ -771,3 +775,11 @@ snippet intcom
     #   # => ${3}
     #
     # Returns ${4}
+#########################################
+# Tao Zhang's snippets for chef recipe
+#########################################
+# translation
+snippet pac
+    package "${1}"
+snippet log
+    log "Well done."
