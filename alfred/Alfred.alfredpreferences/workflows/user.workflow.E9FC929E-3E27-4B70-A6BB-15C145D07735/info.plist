@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>aqi.lucifr.com</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>79396A58-6CBD-47DB-A270-41AF2A4FA0E1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0393243C-36C6-4A1E-A8D1-342E37FC6894</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Lucifr</string>
+	<key>description</key>
+	<string>Get Real-time Air Quality Index (AQI) of a City</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Air Quality Index</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>air</string>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>require( 'workflows.php' );
+$w = new Workflows();
+$query = "{query}";
+
+$url = "http://static.aqicn.org/mapi/?lang=en&amp;n=50&amp;term=$query&amp;jsoncallback=";
+$data = $w-&gt;request( $url );
+$pattern = '/^\((.*)\);/';
+preg_match($pattern,$data,$match);
+$data = json_decode( '{"aqi": '. $match[1] .'}' );
+
+function grade($arg) {
+	if($arg == '-' ) {
+		$out = "No Data";
+		$icon = 'icons/7.png';
+	}
+	elseif( $arg&gt;=0 &amp;&amp; $arg&lt;=50 ) {
+		$out = "Good";
+		$icon = 'icons/1.png';
+	}
+	elseif($arg&gt;=51 &amp;&amp; $arg&lt;=100 ) {
+		$out = "Moderate";
+		$icon = 'icons/2.png';
+	}
+	elseif($arg&gt;=101 &amp;&amp; $arg&lt;=150 ) {
+		$out = "Unhealthy for Sensitive Groups";
+		$icon = 'icons/3.png';
+	}
+	elseif($arg&gt;=151 &amp;&amp; $arg&lt;=200 ) {
+		$out = "Unhealthy";
+		$icon = 'icons/4.png';
+	}
+	elseif($arg&gt;=201 &amp;&amp; $arg&lt;=300 ) {
+		$out = "Very Unhealthy";
+		$icon = 'icons/5.png';
+	}
+	elseif($arg&gt;=300 &amp;&amp; $arg&lt;=500 ) {
+		$out = "Hazardous";
+		$icon = 'icons/6.png';
+	}
+	else {
+		$out = "Beyond Index";
+		$icon = 'icons/6.png';
+	}
+	return array($out, $icon);
+}
+
+foreach ($data-&gt;aqi as $aqi) {
+	list($grade, $icon) = grade($aqi-&gt;aqi);
+	$w-&gt;result( $aqi-&gt;id, $aqi-&gt;id, $aqi-&gt;aqi .', '. $grade, $aqi-&gt;name, $icon );
+};
+echo $w-&gt;toxml();</string>
+				<key>subtext</key>
+				<string>Type the name of a city to search</string>
+				<key>title</key>
+				<string>Air Quality Index</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>79396A58-6CBD-47DB-A270-41AF2A4FA0E1</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://www.aqicn.info/?city={query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0393243C-36C6-4A1E-A8D1-342E37FC6894</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Credit:
+
+- The real-time Air Quality Index (AQI) data used in workflow is powered by http://aqicn.info/
+
+- The icon of this workflow is part of the logo from http://www.airnow.gov/index.cfm?action=aqikids.aqi</string>
+	<key>uidata</key>
+	<dict>
+		<key>0393243C-36C6-4A1E-A8D1-342E37FC6894</key>
+		<dict>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>79396A58-6CBD-47DB-A270-41AF2A4FA0E1</key>
+		<dict>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://lucifr.com</string>
+</dict>
+</plist>
