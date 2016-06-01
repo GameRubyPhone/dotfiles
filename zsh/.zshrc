@@ -1,5 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+# chefvm config
+eval "$(/Users/tz043867/.chefvm/bin/chefvm init -)"
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to 'random', it'll load a random theme each
@@ -21,13 +23,21 @@ alias gcos='git checkout stable'
 # get recent commit from all branches
 # git for-each-ref --sort=-committerdate refs/heads/
 
-alias v='vi'
 alias c='clear'
-alias s='rspec'
-alias soz='source ~/.zshrc'
+alias o='open'
+alias dockerqs='bash /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh'
 alias f='fg'
+alias nr='npm run'
 alias rmt='trash-put'
 alias rm='echo "This is not the command you are looking for."; false'
+alias s='rspec'
+alias soz='source ~/.zshrc'
+alias v='vi'
+
+# Java Home reset
+alias jdk6='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)'
+alias jdk7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
+alias jdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
@@ -56,6 +66,8 @@ zle -N accept-line _-accept-line
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+# Set java home path
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -117,6 +129,7 @@ stty ixany
 stty ixoff -ixon
 setopt noflowcontrol
 setopt BRACE_CCL
+setopt menu_complete
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

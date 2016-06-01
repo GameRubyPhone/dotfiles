@@ -59,6 +59,7 @@ function prompt_rvm {
 # %{$fg[white]%}at \
 # %{$fg[green]%}$(box_name) \
 # %{$fg[white]%}in \
+# %{$fg[white]%}%* \ Current time
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}%{$reset_color%} \
 %{$fg[cyan]%}%n \
@@ -66,7 +67,7 @@ PROMPT="
 ${hg_info}\
 ${git_info} \
 %{$fg[yellow]%}$(prompt_rvm) \
-%{$fg[white]%}%*
+
 %{$terminfo[bold]$fg[green]%}$ %{$reset_color%}"
 
 # %{$fg[white]%}in \
@@ -77,6 +78,6 @@ PROMPT="
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
 ${git_info} \
-%{$fg[white]%}%*
+
 %{$terminfo[bold]$fg[red]%}# %{$reset_color%}"
 fi

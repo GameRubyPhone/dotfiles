@@ -22,6 +22,8 @@
   "maxparams"        : 5,
   "maxdepth"         : 5,
   "maxstatements"    : 50,
+// Allow es 6 syntax
+  "esnext"           : true,
 
 // Relaxing Options
 

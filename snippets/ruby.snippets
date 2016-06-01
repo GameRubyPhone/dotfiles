@@ -711,6 +711,14 @@ snippet ere
 	expect { ${1:actual} }.to raise_error(${2:expected})
 snippet ebv
 	expect(${1:actual}).to be_valid
+snippet ecft
+    expect{${1:action}}.to change{${2:variable}}.from(${3:old_value}).to(${4:new_value})
+snippet ecb
+    expect{${1:action}}.to change{${2:variable}}.by(${3:increase_by})
+snippet es
+    expect(${1:actual}).to satisfy {${2:test_code}}
+snippet est
+    expect(${1:string}).to start_with(${2:string_head})
 snippet ebi
 	expect(${1:actual}).to be_invalid
 snippet en

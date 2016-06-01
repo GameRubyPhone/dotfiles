@@ -125,9 +125,10 @@ let g:syntastic_auto_loc_list            = 1
 let g:syntastic_check_on_open            = 1
 let g:syntastic_check_on_wq              = 0
 let g:syntastic_haml_checkers            = ['haml_lint']
-let g:syntastic_ruby_checkers            = ['rubocop', 'mri']
+let g:syntastic_ruby_checkers            = ['mri']
 " Install rubocop find proper ruby version
 " http://stackoverflow.com/questions/27095623/how-to-enable-rubocop-with-syntastic-vim-plugin-and-rbenv
+" delete rubocop
 "let g:syntastic_ruby_rubocop_exec        = '/Users/tz043867/.rvm/rubies/ruby-2.2.3/bin/ruby /Users/tz043867/.rvm/gems/ruby-2.2.3/bin/rubocop'
 
 set spell spelllang=en_us
