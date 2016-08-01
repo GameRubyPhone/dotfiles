@@ -1,0 +1,25 @@
+:projects:
+  bs: blue_steel
+  bsh: blue_steel_hax
+  ccc: client_configuration_console
+  cdr: client_directory_requester
+  cds: client_directory_service
+  cscs: client_solution_configuration_service
+  con: conventions
+  jr: jolly_roger
+  papi: personnel_api
+  pc: proper_channel
+  pm: personnel-ministry
+  pt: personnel_tool
+  reg: registries
+  root: healtheintent_root
+  sr: service_registrar
+  surv: healthe_intent_application_survival_guide
+  ter: terra
+:chef:
+  cds: cds_chef-repo
+  cscs: cscs_chef-repo
+:users: {}
+:java: {}
+:ruby:
+  cds: client_directory_requester

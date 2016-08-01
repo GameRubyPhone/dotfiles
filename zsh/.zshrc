@@ -28,6 +28,7 @@ alias o='open'
 alias dockerqs='bash /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh'
 alias f='fg'
 alias nr='npm run'
+alias ns='npm start'
 alias rmt='trash-put'
 alias rm='echo "This is not the command you are looking for."; false'
 alias s='rspec'
@@ -156,3 +157,6 @@ bindkey '^N' down-history
 #export GEM_HOME="$HOME/rvm/gems" # add gem home
 # export GEM_PATH="$HOME/rvm/gems/ruby-2.2.2:$HOME/.rvm/gems/ruby-2.2.2@global"
 
+
+export NVM_DIR="/Users/tz043867/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

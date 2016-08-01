@@ -1,0 +1,15 @@
+---
+:projects:
+  ceg: close_enough_github
+  hsc: hi-service_client
+  t: terra
+:chef: {}
+:users:
+  me: jf028170
+  dev: PHAppDev
+  tools: hitoolsdev
+  t: terra
+  ttc: terra-core
+  o: orion
+:java: {}
+:ruby: {}
