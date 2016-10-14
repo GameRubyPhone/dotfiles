@@ -54,7 +54,7 @@ ClassAndModuleChildren:
 SpaceBeforeFirstArg:
   Enabled: false
 
-SingleSpaceBeforeFirstArg:
+SpaceBeforeFirstArg:
   Enabled: false
 
 Delegate:
