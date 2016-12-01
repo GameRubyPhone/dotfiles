@@ -40,6 +40,15 @@ alias jdk6='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)'
 alias jdk7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
 alias jdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 
+# Java Algorithm 4th
+alias j4='java-algs4'
+alias jc4='javac-algs4'
+alias c4='checkstyle-algs4'
+alias f4='findbugs-algs4'
+
+# help ruby script alias
+alias h='help'
+
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # add fish like autosuggestions, https://github.com/tarruda/zsh-autosuggestions

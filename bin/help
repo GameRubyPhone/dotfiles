@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+# Help to explain how to use command
+
+kitchen = <<-kitchen
+
+  kitchen 是和chef绑定的，用来做cookbook的test。
+
+  kitchen list: 显示所有的kitchen的VM，独立跑cookbook用的。
+
+  kitchen create/destroy instance_name: 创建或者删除instance，就是VM
+
+  kitchen converge/verify instance_name: 按cookbook安装所有东西，最后测试一下。
+    1 如果没有参数就跑所有的integration test case
+    2 converge包含create
+
+  kitchen login instance_name: ssh 登录VM来inspect
+kitchen
+
+if ARGV[0].nil?
+  puts "kitchen  docker"
+  return nil
+end
+
+to_print = 'nothing to print'
+
+case ARGV[0]
+when 'k', 'kitchen'
+  to_print = kitchen
+else 
+  to_print = '没有这个命令'
+end
+
+puts to_print
