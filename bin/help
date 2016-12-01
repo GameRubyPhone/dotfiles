@@ -5,27 +5,45 @@ kitchen = <<-kitchen
 
   kitchen 是和chef绑定的，用来做cookbook的test。
 
-  kitchen list: 显示所有的kitchen的VM，独立跑cookbook用的。
+  kitchen list:                                    显示所有的kitchen的VM，独立跑cookbook用的。
 
-  kitchen create/destroy instance_name: 创建或者删除instance，就是VM
+  kitchen create/destroy instance_name:            创建或者删除instance，就是VM
 
-  kitchen converge/verify instance_name: 按cookbook安装所有东西，最后测试一下。
+  kitchen converge/verify instance_name:           按cookbook安装所有东西，最后测试一下。
     1 如果没有参数就跑所有的integration test case
     2 converge包含create
 
-  kitchen login instance_name: ssh 登录VM来inspect
+  kitchen login instance_name:                     ssh 登录VM来inspect
 kitchen
+
+du = <<-du
+
+  du -sh path:  显示指定目录的size
+  du -sh *:     显示1层的子目录size
+  df -h:        显示当前目录和子目录所有的大小
+du
 
 if ARGV[0].nil?
   puts "kitchen  docker"
   return nil
 end
 
+# editors
+vim = <<-vim
+  n ,a,,:  按照，对齐，可以=/:
+  n =:     整理indentation
+  e nmap:  显示所有mapping
+vim
+
 to_print = 'nothing to print'
 
 case ARGV[0]
 when 'k', 'kitchen'
   to_print = kitchen
+when 'd', 'du', 'df'
+  to_print = du
+when 'v', 'vim'
+  to_print = vim
 else 
   to_print = '没有这个命令'
 end
