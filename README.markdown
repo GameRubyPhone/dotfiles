@@ -23,3 +23,6 @@ install jshint2.vim for check javascript styleguide
 
 install haml-lint for check haml styleguide
 
+1. Tmux:
+tmux package management. It's very useful to enable the tmux-yank, used to copy and paste to system clipboard
+https://github.com/tmux-plugins/tpm
