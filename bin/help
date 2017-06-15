@@ -1,6 +1,18 @@
 #!/usr/bin/env ruby
 # Help to explain how to use command
 
+if ARGV[0].nil?
+  puts "docker kitchen mysql tmux vim"
+  return nil
+end
+
+du = <<-du
+
+  du -sh path:  显示指定目录的size
+  du -sh *:     显示1层的子目录size
+  df -h:        显示当前目录和子目录所有的大小
+du
+
 kitchen = <<-kitchen
 
   kitchen 是和chef绑定的，用来做cookbook的test。
@@ -16,17 +28,26 @@ kitchen = <<-kitchen
   kitchen login instance_name:                     ssh 登录VM来inspect
 kitchen
 
-du = <<-du
+# mydql
+mysql = <<-mysql
+  SHOW ENGINES, PLUGINS, DATABASES, TABLES: 显示相关信息
+  CREATE DATABASE db; UES DATABASE: 新建和使用DB 
+  SELECT ...\G:                     方便查看，行显示结果;
+mysql
 
-  du -sh path:  显示指定目录的size
-  du -sh *:     显示1层的子目录size
-  df -h:        显示当前目录和子目录所有的大小
-du
-
-if ARGV[0].nil?
-  puts "kitchen  docker"
-  return nil
-end
+# tmux
+tmux = <<-tmux
+  pre + $:         更改当前的session name
+  pre + L:         切换到上个session
+  pre + l:         切换到上个window
+  pre + ;:         切换到上个pane
+  pre + ctrl + o:  rotate panes
+  pre + j:         找pane加入当前window
+  pre + space:     改变当前layout
+  pre + w:         选择window
+  pre + &:         kill当前window
+  pre + ?:         查询快捷键
+tmux
 
 # editors
 vim = <<-vim
@@ -38,10 +59,14 @@ vim
 to_print = 'nothing to print'
 
 case ARGV[0]
-when 'k', 'kitchen'
-  to_print = kitchen
 when 'd', 'du', 'df'
   to_print = du
+when 'k', 'kitchen'
+  to_print = kitchen
+when 'm', 'mysql'
+  to_print = mysql
+when 't', 'tmux'
+  to_print = tmux
 when 'v', 'vim'
   to_print = vim
 else 

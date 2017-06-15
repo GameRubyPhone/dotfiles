@@ -35,6 +35,8 @@ alias s='rspec'
 alias soz='source ~/.zshrc'
 alias v='vi'
 
+alias rnr='react-native'
+
 # Java Home reset
 alias jdk6='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)'
 alias jdk7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
@@ -48,6 +50,9 @@ alias f4='findbugs-algs4'
 
 # help ruby script alias
 alias h='help'
+
+# rvm alia
+alias rgl='rvm gemset list'
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
@@ -166,6 +171,16 @@ bindkey '^N' down-history
 #export GEM_HOME="$HOME/rvm/gems" # add gem home
 # export GEM_PATH="$HOME/rvm/gems/ruby-2.2.2:$HOME/.rvm/gems/ruby-2.2.2@global"
 
-
 export NVM_DIR="/Users/tz043867/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# PYTHONPATH opencv2
+# ln -s /usr/local/Cellar/opencv/2.4.13.2/lib/python2.7/site-packages/cv.py cv.py
+# ln -s /usr/local/Cellar/opencv/2.4.13.2/lib/python2.7/site-packages/cv2.so cv2.so
+
+alias python='/usr/local/bin/python'
+
+alias hgd='hexo g && hexo d'
+alias hs='hexo s --debug'
+alias py='python3'
+alias e='emacs'
