@@ -14,6 +14,15 @@ install rvm
 
 install ruby by rvm
 
+install spacemacs & update personal config
+
+## File links:
+1. Link yasnippets to private folder:
+  - `ln -s ~/dotfiles/spacemacs/yassnippets ~/.emacs.d/private/snippets`
+
+Configs:
+1. Run the `emacs --daemon` and use `emacsclient -c -a emacs` to open emacs with daemon
+
 
 Q: yank and paste not works in VIM/TMUX
 A: http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
