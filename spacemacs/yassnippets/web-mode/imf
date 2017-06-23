@@ -1,0 +1,5 @@
+#contributor : Tao Zhang <windse7en@gmail.com>
+#name : import ... from '';
+#group : react
+# --
+import $1 from '$2';

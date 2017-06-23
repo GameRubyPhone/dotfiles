@@ -1,0 +1,6 @@
+* Spacemacs Editor
+** Setup
+   - Install emacs and spacemacs to `~/.emacs.d`
+   - Download and link dotfile to `~/.spacemacs`
+   - Install useful 3rd plug-ins:
+     + ispell, used for spell-checking

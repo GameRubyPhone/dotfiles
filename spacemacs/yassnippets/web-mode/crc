@@ -1,0 +1,17 @@
+#contributor : Tao Zhang <windse7en@gmail.com>
+#name : class extend React.Component
+#group : react
+# --
+class $1 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      $2
+    };
+  }
+
+  render() {
+    $3
+    return ;
+  }
+}

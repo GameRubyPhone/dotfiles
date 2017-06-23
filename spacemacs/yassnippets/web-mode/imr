@@ -1,0 +1,6 @@
+#contributor : Tao Zhang <windse7en@gmail.com>
+#name : import React
+#group : react
+# --
+import React from 'react';
+$0

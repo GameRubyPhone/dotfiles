@@ -1,0 +1,5 @@
+#contributor : Tao Zhang <windse7en@gmail.com>
+#name : export default 
+#group : react
+# --
+export default $1;

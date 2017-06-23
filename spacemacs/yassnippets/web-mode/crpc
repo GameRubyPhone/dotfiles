@@ -1,0 +1,8 @@
+#contributor : Tao Zhang <windse7en@gmail.com>
+#name : const Component = ...; pure component
+#group : react
+# --
+const $1 = ($2) => {
+  $3
+  return ;
+}
