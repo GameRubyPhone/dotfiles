@@ -1,0 +1,6 @@
+#contributor : Tao Zhang <windse7en@gmail.com>
+#name : if __name__ == __main__: 
+#group : python 
+# --
+if __name__ == '__main__':
+    $1

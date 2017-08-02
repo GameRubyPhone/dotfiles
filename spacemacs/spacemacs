@@ -48,7 +48,9 @@ values."
      emacs-lisp
      git
      markdown
-     ;; org
+     org
+     latex
+     java
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
@@ -329,10 +331,11 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  ;; Set react indent
+  ;; Set indent in multiple types and modes
   (setq-default
     standard-indent 2
     tab-width 2
+    c-basic-offset 2
     indent-tabs-mode nil
     js-indent-level 2
     js2-basic-offset 2
@@ -342,6 +345,7 @@ you should place your code here."
     web-mode-css-indent-offset 2
     web-mode-code-indent-offset 2
     web-mode-indent-style 2
+    css-indent-offset 2
    )
   ;; bind the ox-twbs
   (setq org-publish-project-alist
@@ -408,7 +412,7 @@ you should place your code here."
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
-    (ox-twbs dashboard page-break-lines pangu-spacing find-by-pinyin-dired chinese-pyim chinese-pyim-basedict ace-pinyin pinyinlib chinese-fonts-setup flymd nodejs-repl pos-tip flycheck gitignore-mode magit magit-popup git-commit with-editor flyspell-correct keyfreq yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic company-web web-completion-data company-tern dash-functional company auto-complete tern web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor yasnippet multiple-cursors js2-mode js-doc coffee-mode web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode markdown-mode winum volatile-highlights spaceline powerline rainbow-delimiters popwin persp-mode open-junk-file neotree indent-guide hide-comnt google-translate golden-ratio fancy-battery eyebrowse dumb-jump define-word column-enforce-mode auto-highlight-symbol adaptive-wrap yaml-mode xterm-color ws-butler which-key vi-tilde-fringe uuidgen use-package unfill toc-org smeargle shell-pop rvm ruby-tools ruby-test-mode rubocop rspec-mode robe reveal-in-osx-finder restart-emacs rbenv rake pbcopy paradox osx-trash osx-dictionary orgit org-projectile org-present org-pomodoro org-download org-bullets noflet mwim multi-term move-text mmm-mode minitest markdown-toc magit-gitflow magit-gh-pulls macrostep lorem-ipsum linum-relative link-hint launchctl info+ hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag gnuplot github-search github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gist gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flx-ido fill-column-indicator expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help ensime enh-ruby-mode elisp-slime-nav company-statistics company-emacs-eclim clean-aindent-mode chruby bundler auto-yasnippet auto-dictionary auto-compile aggressive-indent ace-window ace-link ace-jump-helm-line ac-ispell))))
+    (eclim alert log4e gntp company-auctex auctex ox-twbs dashboard page-break-lines pangu-spacing find-by-pinyin-dired chinese-pyim chinese-pyim-basedict ace-pinyin pinyinlib chinese-fonts-setup flymd nodejs-repl pos-tip flycheck gitignore-mode magit magit-popup git-commit with-editor flyspell-correct keyfreq yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic company-web web-completion-data company-tern dash-functional company auto-complete tern web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor yasnippet multiple-cursors js2-mode js-doc coffee-mode web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode markdown-mode winum volatile-highlights spaceline powerline rainbow-delimiters popwin persp-mode open-junk-file neotree indent-guide hide-comnt google-translate golden-ratio fancy-battery eyebrowse dumb-jump define-word column-enforce-mode auto-highlight-symbol adaptive-wrap yaml-mode xterm-color ws-butler which-key vi-tilde-fringe uuidgen use-package unfill toc-org smeargle shell-pop rvm ruby-tools ruby-test-mode rubocop rspec-mode robe reveal-in-osx-finder restart-emacs rbenv rake pbcopy paradox osx-trash osx-dictionary orgit org-projectile org-present org-pomodoro org-download org-bullets noflet mwim multi-term move-text mmm-mode minitest markdown-toc magit-gitflow magit-gh-pulls macrostep lorem-ipsum linum-relative link-hint launchctl info+ hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag gnuplot github-search github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gist gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flx-ido fill-column-indicator expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help ensime enh-ruby-mode elisp-slime-nav company-statistics company-emacs-eclim clean-aindent-mode chruby bundler auto-yasnippet auto-dictionary auto-compile aggressive-indent ace-window ace-link ace-jump-helm-line ac-ispell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
